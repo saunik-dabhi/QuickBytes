@@ -10,4 +10,6 @@
     <string name="lactose_free">Lactose Free</string>
     <string name="vegetarian">Vegetarian</string>
     <string name="vegan">Vegan</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="steps">Steps</string>
 </resources>
