@@ -6,7 +6,7 @@
         android:title="@string/category" />
     <item
         android:id="@+id/favoriteFragment"
-        android:icon="@drawable/favorite"
+        android:icon="@drawable/favoriteFilled"
         android:title="@string/favorite" />
     <item
         android:id="@+id/filterFragment"

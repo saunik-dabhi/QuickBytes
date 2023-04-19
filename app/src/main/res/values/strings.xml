@@ -5,4 +5,9 @@
     <string name="category">Category</string>
     <string name="favorite">Favorites</string>
     <string name="filters">Filters</string>
+    <string name="filterText">Select Filters to apply in the meals.</string>
+    <string name="gluten_free">Gluten Free</string>
+    <string name="lactose_free">Lactose Free</string>
+    <string name="vegetarian">Vegetarian</string>
+    <string name="vegan">Vegan</string>
 </resources>
