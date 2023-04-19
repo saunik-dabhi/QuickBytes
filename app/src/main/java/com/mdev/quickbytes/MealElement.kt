@@ -6,8 +6,8 @@ data class MealElement(
     val id: String,
     val categories: List<String>,
     val title: String,
-    val affordability: Affordability,
-    val complexity: Complexity,
+    val affordability: String,
+    val complexity: String,
     val imageURL: String,
     val duration: Long,
     val ingredients: List<String>,
@@ -17,15 +17,3 @@ data class MealElement(
     val isVegetarian: Boolean,
     val isLactoseFree: Boolean
 )
-
-enum class Affordability {
-    Affordable,
-    Luxurious,
-    Pricey
-}
-
-enum class Complexity {
-    Challenging,
-    Hard,
-    Simple
-}
