@@ -26,16 +26,16 @@ class CategoryAdapter(context: Context, data: Categories) :
 
     companion object {
         private val colors: List<String> = listOf(
-            "#1E1E1E",
-            "#2E2E2E",
-            "#3A3A3A",
-            "#464646",
-            "#555555",
-            "#626262",
-            "#707070",
-            "#7C7C7C",
-            "#8A8A8A",
-            "#979797"
+            "#FFC107",
+            "#FF9800",
+            "#F44336",
+            "#8BC34A",
+            "#00BFFF",
+            "#9B51E0",
+            "#50E3C2",
+            "#4A90E2",
+            "#D0021B",
+            "#F5A623"
         )
     }
 }

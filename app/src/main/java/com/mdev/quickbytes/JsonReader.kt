@@ -32,6 +32,6 @@ class JsonReader {
 
     companion object {
         const val categoryJson = "category.json"
-        const val mealJson = "meal.json"
+        const val mealJson = "meals.json"
     }
 }
