@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter
 import android.widget.FrameLayout
 import android.widget.TextView
 
+//custom array adapter for Category this connects custom grid layout with gridview
 class CategoryAdapter(context: Context, data: Categories) :
     ArrayAdapter<CategoryElement>(context, R.layout.grid_layout, data) {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
@@ -17,6 +18,7 @@ class CategoryAdapter(context: Context, data: Categories) :
         if (view == null) {
             view = LayoutInflater.from(context).inflate(R.layout.grid_layout, parent, false)
         }
+        //to set bg color of the category grid item
         val frameLayout = view!!.findViewById<FrameLayout>(R.id.categoryBackground)
         frameLayout.setBackgroundColor(Color.parseColor(colors[position]))
         val categoryText = view.findViewById<TextView>(R.id.categoryTitle)
@@ -25,6 +27,7 @@ class CategoryAdapter(context: Context, data: Categories) :
     }
 
     companion object {
+        // background color for categories
         private val colors: List<String> = listOf(
             "#FFC107",
             "#FF9800",

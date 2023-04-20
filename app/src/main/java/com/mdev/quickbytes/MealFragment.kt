@@ -19,8 +19,11 @@ class MealFragment : Fragment() {
         _binding = FragmentMealBinding.inflate(inflater, container, false)
         val view = binding.root
         val jsonReader = JsonReader()
+        // receive data from category fragment
         val categoryId = MealFragmentArgs.fromBundle(requireArguments()).categoryId
+        // get list of all meals from json file
         val meals = jsonReader.getMealsFromJson(requireContext())
+        // get a list of meals that are of same category
         val selectedMeals: ArrayList<MealElement> = ArrayList()
         for (meal in meals) {
             for (id in meal.categories) {
@@ -29,6 +32,7 @@ class MealFragment : Fragment() {
                 }
             }
         }
+        // set up adapter in meal list
         val listView = binding.mealsList
         listView.adapter = MealAdapter(requireContext(), selectedMeals.toList())
         return view

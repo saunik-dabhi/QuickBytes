@@ -1,5 +1,6 @@
 package com.mdev.quickbytes
 
+// meal model
 typealias Meals = List<MealElement>
 
 data class MealElement(

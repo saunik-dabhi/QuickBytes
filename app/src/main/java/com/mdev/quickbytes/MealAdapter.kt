@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
 
+// custom adapter to link custom meal list layout with list of meal element
 class MealAdapter(context: Context, data: Meals) :
     ArrayAdapter<MealElement>(context, R.layout.meal_list_tile, data) {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
